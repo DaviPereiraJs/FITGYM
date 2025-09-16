@@ -1,0 +1,132 @@
+root {
+  --co1: #1c0b2b;
+  --co2: #301c41;
+  --co3: #413b6b;
+  --co4: #5c65c0;
+  --co5: #6f95ff;
+  --grad: linear-gradient(135deg, #4d42eb, #a6b5ff);
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body e cores principais */
+body {
+  background: var(--grad) ;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #6200ff; /* Azul moderno */
+  transition: background 0.3s ease;
+}
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #ffe600 !important;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #63a9ff, #001eff);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  animation: fadeInUp 1s ease forwards;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+.hero .btn {
+  margin-top: 30px;
+  margin: 10px;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* About Section */
+.about-section {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-section h2 {
+  color: #0400ff;
+  margin-bottom: 30px;
+}
+.about-section p {
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+footer a {
+  color: #2600ff;
+}
+footer a:hover {
+  color: #edff63;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+  .card-img-top { height: 150px; }
+  .about-section { padding: 50px 15px; }
+}

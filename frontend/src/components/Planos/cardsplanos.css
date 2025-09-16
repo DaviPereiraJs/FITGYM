@@ -1,0 +1,66 @@
+/* Fundo da página */
+body {
+  background: linear-gradient(135deg, #42AAEB, #A6C0FF);
+  min-height: 100vh;
+}
+
+/* Cores da paleta */
+.color1 { background-color: #1c0b2b; }
+.color2 { background-color: #301c41; }
+.color3 { background-color: #413b6b; }
+.color4 { background-color: #5c65c0; }
+.color5 { background-color: #6f95ff; }
+
+/* Card de cada plano */
+.plano-card {
+  background-color: #301c41; /* cor2 */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plano-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Caixa com duração (12, 6, Mensal) */
+.plano-icone {
+  background-color: #1c0b2b; /* cor1 */
+  padding: 12px 18px;
+  border-radius: 10px;
+  min-width: 70px;
+}
+
+.plano-duracao-num {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6f95ff; /* cor5 */
+}
+
+.plano-duracao-text {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Botão de matrícula */
+.btn-matricula {
+  background-color: #5c65c0; /* cor4 */
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-matricula:hover {
+  background-color: #6f95ff; /* cor5 */
+  color: #1c0b2b; /* contraste */
+}
+
+.fw-bold, #mensalidade-text {
+  text-align: start;
+}
